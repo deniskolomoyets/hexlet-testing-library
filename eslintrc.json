@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "env": {
+    "es2022": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.{js,jsx,ts,tsx}",
+        "**/*.{test,spec}.{js,jsx,ts,tsx}"
+      ],
+      "env": {
+        "jest": true
+      },
+      "plugins": ["testing-library", "jest-dom", "jest"],
+      "extends": [
+        "plugin:testing-library/dom",
+        "plugin:jest-dom/recommended",
+        "plugin:jest/recommended"
+      ],
+      "rules": {
+      }
+    }
+  ]
+}
