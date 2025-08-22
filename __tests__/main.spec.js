@@ -2,8 +2,7 @@ import '@hexlet/tic-tac-toe/public/style.css'
 import { test, expect } from 'vitest'
 import { screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
-import { debug } from 'vitest-preview';
-
+import { debug } from 'vitest-preview'
 
 // Импортируем игру
 import { TicTacToe } from '@hexlet/tic-tac-toe'
@@ -18,11 +17,9 @@ test('main', async () => {
   const game = new TicTacToe(document.body)
   game.start()
   debug()
-
-
   // Выбираем нужные элементы
   // Находим поля для ввода имен игроков
-  const input1 = screen.getByLabelText('Player 1')
+  const input1 = screen.getByLabelText('Player 3')
   const input2 = screen.getByLabelText('Player 2')
 
   // Выполняем необходимые действия
@@ -33,8 +30,7 @@ test('main', async () => {
   // Отправляем форму
   const submitButton = screen.getByText('Start Game')
   await user.click(submitButton)
-  debug()
+
   // Проверяем результат
   expect(document.body).toHaveTextContent('user 1, you are up!')
-
 })

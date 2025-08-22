@@ -1,3 +1,1 @@
-// vitest.setup.ts
-import '@testing-library/jest-dom';
-import 'vitest-preview/setup';
+   import '@testing-library/jest-dom/vitest'
