@@ -28,5 +28,8 @@
     "jsdom": "^26.1.0",
     "vitest": "^3.2.4",
     "vitest-preview": "^0.0.1"
+  },
+  "dependencies": {
+    "@hexlet/tic-tac-toe": "^0.0.14"
   }
 }
